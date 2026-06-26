@@ -1,0 +1,5 @@
+node_modules/
+.gitnexus/
+*.log
+npm-debug.log*
+offline-codex-transcripts-*/

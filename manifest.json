@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Profit/Loss Calculator",
+  "description": "Track account balance, trade profit/loss, and round-trip fees by week.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "Profit/Loss Calculator",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "storage"
+  ]
+}

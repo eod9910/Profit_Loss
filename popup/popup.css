@@ -1,0 +1,133 @@
+:root {
+  color-scheme: light;
+  --app-bg: #f3f6fb;
+  --app-ink: #172033;
+  --muted: #6c778b;
+  --gain: #0a7f45;
+  --loss: #b42318;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 430px;
+  min-height: 580px;
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--app-ink);
+  font-size: 14px;
+}
+
+.app-shell {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+}
+
+.hero {
+  color: #fff;
+  background: linear-gradient(135deg, #102a56, #2664d8);
+  border: 0;
+}
+
+.eyebrow {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.summary-card {
+  padding: 12px;
+  background: #fff;
+  border: 1px solid rgba(16, 42, 86, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 0.25rem 0.75rem rgba(23, 32, 51, 0.05);
+}
+
+.summary-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.summary-card strong {
+  display: block;
+  margin-top: 2px;
+  font-size: 1.15rem;
+}
+
+.trade-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.form-span {
+  grid-column: 1 / -1;
+}
+
+.week-sort {
+  width: 150px;
+}
+
+.weekly-list,
+.trade-log {
+  display: grid;
+  gap: 10px;
+}
+
+.weekly-row,
+.trade-row {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid rgba(16, 42, 86, 0.08);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.weekly-row header,
+.trade-row header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.amount-gain {
+  color: var(--gain);
+}
+
+.amount-loss {
+  color: var(--loss);
+}
+
+.empty-state {
+  padding: 14px;
+  color: var(--muted);
+  text-align: center;
+  border: 1px dashed rgba(16, 42, 86, 0.2);
+  border-radius: 10px;
+}
+
+.delete-trade {
+  width: fit-content;
+  justify-self: end;
+}

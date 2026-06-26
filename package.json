@@ -1,0 +1,15 @@
+{
+  "name": "profit-loss-chrome-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension popup for tracking account balance, trade profit/loss, and round-trip fees.",
+  "type": "module",
+  "scripts": {
+    "prepare:vendor": "node scripts/copy-bootstrap.js",
+    "check": "node --check popup/popup.js && node --check scripts/copy-bootstrap.js"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {}
+}
