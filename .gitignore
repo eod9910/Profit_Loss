@@ -1,5 +1,7 @@
 node_modules/
 .gitnexus/
+.claude/
+CLAUDE.md
 *.log
 npm-debug.log*
 offline-codex-transcripts-*/
